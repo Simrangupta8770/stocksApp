@@ -2,9 +2,10 @@
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ width:100%;
+ flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .title a {
@@ -80,10 +81,31 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
+
+.tabButtons {
+  display: flex;
+  padding:10px 10rem;
 }
 
+.tabButtons button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: none;
+  border: none; /* Remove border */
+  outline: none;
+  border-bottom: 2px solid transparent; /* Add a transparent bottom border */
+}
+
+.tabButtons button.active {
+  border-color: tomato; /* Change border color for the active tab */
+  background-color: transparent; /* Reset the background color for active tab */
+  color: tomato; /* Change text color for the active tab */
+}
+
+.tabContent {
+  /* border: 1px solid #0070f3; */
+  padding: 10px;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

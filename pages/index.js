@@ -1,54 +1,49 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import { useState } from 'react';
 import styles from '../styles/Home.module.css';
+import HomePage from '../components/HomePage';
+
 
 export default function Home() {
+ 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
+      {/* <Head>
+        <title>Groww Stocks</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={styles.tabButtons}>
+        <button
+          className={activeTab === 1 ? styles.active : ''}
+          onClick={() => handleTabClick(1)}
+        >
+          Tab 1
+        </button>
+        <button
+          className={activeTab === 2 ? styles.active : ''}
+          onClick={() => handleTabClick(2)}
+        >
+          Tab 2
+        </button>
+       
+      </div>
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
+      <div className={styles.tabContent}>
+        {activeTab === 1 && <div>
+          <GainerLoserArea data={topg} />
+          {showLoadMoreg && <button className="loadMore" onClick={()=>loadMore('g')}>
+        Load More 
+    </button>}</div>}
+        {activeTab === 2 && <div>
+          <GainerLoserArea data={topl} />
+          {showLoadMorel && <button className="loadMore" onClick={()=>loadMore('l')}>
+        Load More 
+    </button>}
+    </div>}
+      
+      </div> */}
+      <HomePage />
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -129,3 +124,4 @@ export default function Home() {
     </div>
   );
 }
+

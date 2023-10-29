@@ -1,0 +1,26 @@
+.titleHead{
+    display:flex;
+    padding:20px 10rem;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.titleLeft h4{
+    color: grey;
+}
+
+.cardPrice{
+    font-weight:bold;
+    padding:5px;
+}
+.cardPer{
+    color:green;
+    font-weight:bold;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.icon{
+   
+    transform: rotate(30deg);
+}
