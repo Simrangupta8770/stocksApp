@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST='{"..\\\\components\\\\GraphStock.js -> react-plotly.js":{"id":8660,"files":["static/chunks/e48519b3.8ac9db91808e6305.js","static/chunks/535.5b8eaca499d77fe2.js"]}}';
